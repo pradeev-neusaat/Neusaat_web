@@ -36,8 +36,8 @@ const AboutSection = () => {
           {/* Vision Box */}
           <div className={styles.visionBox}>
             <p>
-              "As a forward-thinking AI startup, we are committed to leveraging AI to transform businesses. 
-              We strive to bring intelligent solutions that redefine customer engagement and operational efficiency."
+              &quot;As a forward-thinking AI startup, we are committed to leveraging AI to transform businesses. 
+              We strive to bring intelligent solutions that redefine customer engagement and operational efficiency.&quot;
             </p>
           </div>
         </div>
