@@ -1,0 +1,164 @@
+/* General Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #cee1fa;
+  transition: background-color 0.4s ease-in-out, transform 0.3s ease-in-out;
+  z-index: 1000;
+  margin-bottom: 0;
+}
+
+/* Change background color when scrolling */
+.scrolled {
+  
+  background:#e9ecf0 ;
+  color: rgb(10, 10, 10);
+}
+
+/* Change link colors when navbar is scrolled */
+.scrolled .navLinks button {
+  color: rgb(48, 46, 46);
+}
+
+.scrolled .navLinks button:hover {
+  color: #00aaff;
+}
+
+/* Change button style when navbar is scrolled */
+.scrolled .contactButton {
+  background-color: #00aaff;
+}
+
+.scrolled .contactButton:hover {
+  background-color: #0077cc;
+}
+
+/* Logo Styling */
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Desktop Navigation Links */
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.navLinks.open {
+  display: flex;
+}
+
+.navLinks li {
+  display: inline;
+  margin-bottom: 10px;
+}
+
+/* Convert buttons to behave like links */
+.navLinks button {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navLinks button:hover {
+  color: #0070f3;
+}
+
+/* Get in Touch Button */
+.contactButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #0070f3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contactButton:hover {
+  background-color: #0056b3;
+}
+
+/* =================== */
+/* Mobile Navbar Styles */
+/* =================== */
+
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  /* Mobile Navigation Menu */
+  .navLinks {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    display: none;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .navLinks.open {
+    display: flex;
+  }
+
+  .navLinks li {
+    width: 40%;
+    background: #f0f0f0;
+    padding: 12px;
+    margin: 5px 0;
+    text-align: center;
+    border-radius: 10px;
+    transition: background 0.3s;
+  }
+
+  .navLinks button {
+    width: 100%;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+  }
+
+  .navLinks li:hover {
+    background: #0070f3;
+  }
+
+  .navLinks li:hover button {
+    color: white;
+  }
+
+  .contactButton {
+    display: none;
+  }
+}

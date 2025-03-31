@@ -1,0 +1,121 @@
+/* About Section */
+.aboutSection {
+  padding: 60px 20px;
+  background-color: #f0f6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 50px 0;
+ 
+  
+}
+
+/* Container */
+.aboutContainer {
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Left Side (Text Content) */
+.textContent {
+  flex: 1;
+  max-width: 50%;
+  
+  ;
+}
+
+.textContent h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.textContent h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.textContent p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.fadeInLeft {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* Vision Box */
+.visionBox {
+  background: #2c8ef0;
+  color: white;
+  width: 550px;
+  padding: 20px;
+  border-radius: 8px;
+  
+  margin-top: 20px;
+  padding-bottom: 20px;
+  font-style: italic;
+}
+
+/* Right Side (Image) */
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.imageContainer img {
+  max-width: 520px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.fadeInRight {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* Fade-in animation */
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* Slight upward motion */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation when the section becomes visible */
+.fadeIn {
+  animation: fadeInAnimation 1s ease-out forwards;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .aboutContainer {
+    flex-direction: column;
+      text-align: center;
+  }
+  
+  .imageContainer {
+    order: -1;
+    display: flex;
+    justify-content: center;
+  }
+  .visionBox{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .imageContainer img {
+    display: none;
+  }
+}

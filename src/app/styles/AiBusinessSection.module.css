@@ -1,0 +1,142 @@
+/* ===== SECTION STYLES ===== */
+.aiBusinessSection {
+    background: #f0f6ff;  /* Light blue background */
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  /* Fading in when scrolling */
+  .fadeInUp {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* ===== TEXT CONTENT ===== */
+  .subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3b7fd1;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  
+  /* ===== CARD CONTAINER ===== */
+  .cardContainer {
+    display: flex;
+    height: 320px;
+    justify-content: center;
+    gap: 30px;
+    
+  }
+  
+  /* ===== CARD STYLING ===== */
+  .card {
+    width: 340px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Card Image */
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  /* Card Content */
+  .cardContent {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .cardContent h3 {
+    font-size: 18.72px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .cardContent p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* ===== RESPONSIVE DESIGN ===== */
+  /* ===== RESPONSIVE DESIGN ===== */
+  @media (max-width: 1024px) {
+    .cardContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Adds space between cards */
+        width: 100%;
+        height: auto;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Ensures text stays visible */
+    }
+
+    .card img {
+        width: 100%; /* Makes images responsive */
+        height: auto;
+    }
+
+    .cardContent {
+        display: block !important; /* Ensures text remains visible */
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        height: 100%;
+        
+        max-width: 350px;
+    }
+
+    .cardContent {
+        display: block !important;
+    }
+}
+
+  
+  

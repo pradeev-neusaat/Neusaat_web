@@ -1,0 +1,94 @@
+/* ===== SECTION CONTAINER ===== */
+.whyChoose {
+    padding: 50px 20px;
+    background-color:#f0f6ff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  
+  /* ===== IMAGE CONTAINER ===== */
+  .imageContainer {
+    width: 50%;
+  }
+  
+  .image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* ===== TEXT CONTENT ===== */
+  .textContent {
+    width: 50%;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .fadeInRight {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .title span {
+    color: #0056b3; /* Highlighted color */
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Features List */
+  .featuresList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .featuresList li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* ===== RESPONSIVE DESIGN ===== */
+  @media (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .textContent, .imageContainer {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 1.8rem;
+    }
+  
+    .description, .featuresList li {
+      font-size: 14px;
+    }
+  }
+  

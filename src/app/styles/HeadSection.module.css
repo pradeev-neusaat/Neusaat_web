@@ -1,0 +1,158 @@
+/* 🎨 Background for Head Section */
+.headSectionBackground {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  background-color: transparent; /* Default transparent */
+  transition: background-color 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🌫️ Light Blue Background When at Top */
+.lightBlue {
+  background-color: #cee1fa; /* Match navbar color */
+}
+
+/* 🔵 Circle Design Elements */
+.circleLeft,
+.circleRight {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(149, 202, 219, 0.3); /* Light blue circles */
+}
+
+.circleLeft {
+  width: 250px;
+  height: 250px;
+  left: -100px;
+  top: 50px;
+}
+
+.circleRight {
+  width: 250px;
+  height: 250px;
+  right: -100px;
+  bottom: 50px;
+}
+
+/* 🔲 Dotted Design */
+.dots {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: radial-gradient(#a5b4c9 2px, transparent 2px);
+  background-size: 10px 10px;
+  right: 350px;
+  top: 50px;
+}
+
+/* 📌 Head Section Content */
+.headContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  padding: 50px;
+  border-radius: 50px;
+}
+
+/* 💡 Animated Text Content */
+.textContent {
+  flex: 1;
+  max-width: 50%;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* 🌟 Add Animation when Text Appears */
+.textAnimate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.textContent h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-top: 0;
+}
+
+.textContent .highlight {
+  color: #4a90e2; /* Blue highlight */
+}
+
+.textContent p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* 🚀 CTA Button */
+.ctaButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #3578c2;
+}
+
+/* 📸 Single Image Container */
+.imageContainer {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* 🔄 Add animation for the image */
+.imageAnimate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* 🖼️ Single Image */
+.headImage {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .headContent {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .textContent {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .imageContainer {
+    max-width: 100%;
+  }
+
+  .headImage {
+    max-width: 80%;
+  }
+}

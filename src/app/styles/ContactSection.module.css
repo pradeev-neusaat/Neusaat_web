@@ -1,0 +1,150 @@
+.contactSection {
+
+    align-items: center;
+    max-width: 1200px; /* Adjusted width to match previous sections */
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    
+    overflow: hidden;
+  }
+  
+  .contactContainer {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%; /* Ensures it fits within max-width */
+    max-width: 1200px; /* Adjusted width to avoid extra space */
+    margin: 0 auto; /* Centering the container */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+ 
+    
+  }
+  
+  /* Left Side */
+  .contactInfo {
+     /* Makes it responsive instead of fixed width */
+    background: #4a89dc;
+    color: white;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 35%; /* Controls size ratio */
+  }
+  
+  .contactInfo h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .contactInfo h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .contactItem i {
+    font-size: 20px;
+    
+  }
+  
+  .contactItem h4 {
+    font-size: 16px;
+  }
+  
+  .contactItem p {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Right Side */
+  .contactForm {
+    padding: 40px;
+    flex: 1; /* Allows it to take the remaining space */
+    max-width: 62%; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .formRow {
+    
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .inputGroup {
+ 
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  }
+  
+  .inputGroup label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .inputRow .inputGroup {
+    width: 48%;
+  }
+
+  .inputGroup input,
+  .inputGroup textarea {
+    border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  padding: 10px 0;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  }
+  
+  .inputGroup input:focus,
+.inputGroup textarea:focus {
+  border-bottom: 2px solid #4a89dc;
+}
+  
+  .submitButton {
+    background-color: #4a89dc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contactContainer {
+      flex-direction: column;
+      align-items: center;
+      border-radius: 30px;
+    }
+  
+    .contactInfo,
+    .contactForm {
+      width: 100%;
+      align-items: center;
+    }
+  
+    .formRow {
+      flex-direction: column;
+    }
+  
+    .inputGroup {
+      width: 100%;
+    }
+  }
+  
