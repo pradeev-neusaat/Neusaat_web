@@ -92,7 +92,7 @@ const ContactSection = () => {
             <i className="fas fa-phone"></i>
             <div>
               <h4>Call Us</h4>
-              <p>(720) 588-8452</p>
+              <p>(+91)7395843476</p>
             </div>
           </div>
         </div>
