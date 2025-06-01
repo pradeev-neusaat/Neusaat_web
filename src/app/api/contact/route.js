@@ -26,7 +26,7 @@ export async function POST(req) {
       from: `"${name}" <${process.env.ZOHO_SMTP_USER}>`,
       to: process.env.ZOHO_SMTP_USER,
       subject: "New Contact Form Submission",
-      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}\nPhone: ${phone}`,
+      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}\nnumber: ${phone}`,
     };
 
     await transporter.sendMail(mailOptions);
