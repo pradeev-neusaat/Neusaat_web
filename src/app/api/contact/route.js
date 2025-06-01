@@ -21,10 +21,14 @@ export async function POST(req) {
         pass: process.env.ZOHO_SMTP_PASS,
       },
     });
-
+const recipients = [
+      process.env.ZOHO_SMTP_USER,
+      process.env.ZOHO_SECOND_RECIPIENT // 👈 Add this in your .env.local
+    ].filter(Boolean).join(", "); // Removes empty entries and joins
+    
     let mailOptions = {
       from: `"${name}" <${process.env.ZOHO_SMTP_USER}>`,
-      to: process.env.ZOHO_SMTP_USER,
+      to: recipients,
       subject: "New Contact Form Submission",
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}\nPhone: ${phone}`,
     };
