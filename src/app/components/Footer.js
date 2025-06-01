@@ -11,8 +11,8 @@ const Footer = () => {
         
         {/* Contact Info */}
         <div className={styles.contactInfo}>
-          <p><i className="fas fa-phone-alt"></i> (+91) 588-8452</p>
-          <p><i className="fas fa-envelope"></i> info@neusaat.com</p>
+          <p><i className="fas fa-phone-alt"></i> (+91)7395843476 </p>
+          <p><i className="fas fa-envelope"></i>  contact@neusaat.com </p>
           <p><i className="fas fa-map-marker-alt"></i> Tamil Nadu, India</p>
         </div>
 
