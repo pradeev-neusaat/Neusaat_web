@@ -84,7 +84,7 @@ const ContactSection = () => {
             <i className="fas fa-envelope"></i>
             <div>
               <h4>Contact Us Via Email</h4>
-              <p>info@neusaat.com</p>
+              <p>contact@neusaat.com</p>
             </div>
           </div>
 
